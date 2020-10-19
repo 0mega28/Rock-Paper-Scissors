@@ -84,3 +84,18 @@ body {
     text-align: center;
     padding: 10px ;
 }
+
+.user-won {
+    border: 4px solid green;
+    box-shadow: 0 0 10px green;
+}
+
+.user-lose {
+    border: 4px solid red;
+    box-shadow: 0 0 10px red;
+}
+
+.draw {
+    border: 4px solid gray;
+    box-shadow: 0 0 10px gray;
+}
