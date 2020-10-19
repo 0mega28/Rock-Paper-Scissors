@@ -36,6 +36,12 @@ body {
     margin: 20px auto;
     width: 300px;
     position: relative;
+    transition: 0.5s all ease-in-out;
+}
+
+.score-board:hover {
+    border-color: aquamarine;
+    transform: scale(1.2);
 }
 
 .badge {
@@ -78,6 +84,11 @@ body {
     border: 4px solid white;
     border-radius: 50%;
     cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+
+.choice:hover {
+    transform: scale(1.3);
 }
 
 #make-your-move {
@@ -99,4 +110,10 @@ body {
 .draw {
     border: 4px solid gray;
     box-shadow: 0 0 10px gray;
+}
+
+#make-your-move:hover {
+    color: crimson;
+    transition: 0.5s all ease-in-out;
+    transform: scale(1.2);
 }
