@@ -3,8 +3,10 @@
 		<head> 
 			<meta charset="utf8">
 			<link rel="stylesheet" href="./styles.css">
+			<script src="./app.js"></script>
 			<title> Rock Paper Scissors</title>
 		</head>
+
 		<body>
 
 			<header class="header">
@@ -18,10 +20,19 @@
 			</div>
 
 			<div class="result">
-				<p>Paper Covers Rock. You win!!</p>
+				<p id="text-result">Paper Covers Rock. You win!!</p>
 			</div>
-			<div class="choices">
 
+			<div class="choices">
+				<span class="choice" id="rock"> 
+					<img src="/img/hand-rock.png">
+				</span>
+				<span class="choice" id="paper"> 
+					<img src="/img/hand-paper.png">
+				</span>
+				<span class="choice" id="scissors"> 
+					<img src="/img/hand-scissors.png">
+				</span>
 			</div>
 			
 			<p id="make-your-move">Make your move</p>
