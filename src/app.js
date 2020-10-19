@@ -30,6 +30,11 @@ function userWon(user_choice, computer_choice){
     computer_score.innerHTML = computer;
     result = `${getWord(user_choice)} ${user_word} beats ${getWord(computer_choice)} ${computer_word} You Won`;
     text_result.innerHTML = result;
+    const img_choice = document.getElementById(getWord(user_choice).toLowerCase());
+    img_choice.classList.add("user-won");
+    setTimeout(() => {
+        img_choice.classList.remove("user-won");
+    }, 300);
 }
 
 function computerWon(user_choice, computer_choice){
@@ -38,6 +43,11 @@ function computerWon(user_choice, computer_choice){
     computer_score.innerHTML = computer;
     result = `${getWord(user_choice)} ${user_word} loses to ${getWord(computer_choice)} ${computer_word} You Lose`;
     text_result.innerHTML = result;
+    const img_choice = document.getElementById(getWord(user_choice).toLowerCase());
+    img_choice.classList.add("user-lose");
+    setTimeout(() => {
+        img_choice.classList.remove("user-lose");
+    }, 300);
 }
 
 function draw(user_choice, computer_choice){
@@ -45,6 +55,11 @@ function draw(user_choice, computer_choice){
     computer_score.innerHTML = computer;
     result = `${getWord(user_choice)} ${user_word} draws ${getWord(computer_choice)} ${computer_word}`;
     text_result.innerHTML = result;
+    const img_choice = document.getElementById(getWord(user_choice).toLowerCase());
+    img_choice.classList.add("draw");
+    setTimeout(() => {
+        img_choice.classList.remove("draw");
+    }, 300);
 }
 
 function game(user_choice) {
