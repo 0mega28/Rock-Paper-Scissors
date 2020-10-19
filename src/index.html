@@ -1,45 +1,38 @@
 <!DOCTYPE html>
-	<html>
-		<head> 
-			<meta charset="utf8">
-			<link rel="stylesheet" href="./styles.css">
-			<script src="./app.js"></script>
-			<title> Rock Paper Scissors</title>
-		</head>
+<html>
+	<head>
+		<meta charset="utf8" />
+		<link rel="stylesheet" href="./styles.css" />
+		<title>Rock Paper Scissors</title>
+	</head>
 
-		<body>
+	<body>
+		<header class="header">
+			<h1>Rock Paper Scissors</h1>
+		</header>
 
-			<header class="header">
-				<h1>Rock Paper Scissors</h1>
-			</header>
-
-			<div class="score-board">
-				<p id="user-label" class="badge">USER</p>
-				<p id="computer-label" class="badge">COMP</p>
-				<div class="score">
-					<span id="user-score">0</span>
-					<span>:</span>
-					<span id="computer-score">0</span>
-				</div>
+		<div class="score-board">
+			<p id="user-label" class="badge">USER</p>
+			<p id="computer-label" class="badge">COMP</p>
+			<div class="score">
+				<span id="user-score">0</span>
+				<span>:</span>
+				<span id="computer-score">0</span>
 			</div>
+		</div>
 
-			<div class="result">
-				<p id="text-result">Paper Covers Rock. You win!!</p>
-			</div>
+		<div class="result">
+			<p id="text-result">Paper Covers Rock. You win!!</p>
+		</div>
 
-			<div class="choices">
-				<span class="choice" id="rock"> 
-					<img src="/img/hand-rock.png">
-				</span>
-				<span class="choice" id="paper"> 
-					<img src="/img/hand-paper.png">
-				</span>
-				<span class="choice" id="scissors"> 
-					<img src="/img/hand-scissors.png">
-				</span>
-			</div>
-			
-			<p id="make-your-move">Make your move</p>
+		<div class="choices">
+			<img class="choice" id="rock" src="/img/hand-rock.png" />
+			<img class="choice" id="paper" src="/img/hand-paper.png" />
+			<img class="choice" id="paper" src="/img/hand-scissors.png" />
+		</div>
 
-		</body>
-	</html>
+		<p id="make-your-move">Make your move</p>
+
+		<script type="text/javascript" src="./app.js" charset="utf-8"></script>
+	</body>
+</html>
