@@ -8,9 +8,6 @@ const computer_score = document.getElementById("computer-score");
 let user = 0;
 let computer = 0;
 
-user_word = "user".sub();
-computer_word = "comp".sub();
-
 function getWord(choice){
     switch (choice) {
         case "r": return "Rock";
@@ -28,7 +25,7 @@ function userWon(user_choice, computer_choice){
     user++;
     user_score.innerHTML = user;
     computer_score.innerHTML = computer;
-    result = `${getWord(user_choice)} ${user_word} beats ${getWord(computer_choice)} ${computer_word} You Won`;
+    result = `${getWord(user_choice)} beats ${getWord(computer_choice)} You Won`;
     text_result.innerHTML = result;
     const img_choice = document.getElementById(getWord(user_choice).toLowerCase());
     img_choice.classList.add("user-won");
@@ -41,7 +38,7 @@ function computerWon(user_choice, computer_choice){
     computer++;
     user_score.innerHTML = user;
     computer_score.innerHTML = computer;
-    result = `${getWord(user_choice)} ${user_word} loses to ${getWord(computer_choice)} ${computer_word} You Lose`;
+    result = `${getWord(user_choice)} loses to ${getWord(computer_choice)} You Lose`;
     text_result.innerHTML = result;
     const img_choice = document.getElementById(getWord(user_choice).toLowerCase());
     img_choice.classList.add("user-lose");
@@ -53,7 +50,7 @@ function computerWon(user_choice, computer_choice){
 function draw(user_choice, computer_choice){
     user_score.innerHTML = user;
     computer_score.innerHTML = computer;
-    result = `${getWord(user_choice)} ${user_word} draws ${getWord(computer_choice)} ${computer_word}`;
+    result = `${getWord(user_choice)} draws ${getWord(computer_choice)} `;
     text_result.innerHTML = result;
     const img_choice = document.getElementById(getWord(user_choice).toLowerCase());
     img_choice.classList.add("draw");
