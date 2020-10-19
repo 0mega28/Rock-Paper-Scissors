@@ -72,6 +72,7 @@ body {
 }
 
 .choice {
+    padding: 10px;
     margin: 0px 30px;
     border: 4px solid white;
     border-radius: 50%;
